@@ -8,3 +8,4 @@ LOX business
 aleg business
 alex Back-end
 Pid Back-end
+polina Front-end

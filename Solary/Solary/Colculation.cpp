@@ -8,7 +8,7 @@ void menu() {
 	cout << "\t\t*******************Меню*********************" << endl;
 	cout << "\t\t*                                          *" << endl;
 	cout << "\t\t*   [Нажмите 1] Узнать информацию о        *" << endl;
-	cout << "\t\t*               расчёте заработной плате   *" << endl;
+	cout << "\t\t*               расчёте заработной платы   *" << endl;
 	cout << "\t\t*   [Нажмите 2] Рассчитать заработную      *" << endl;
 	cout << "\t\t*               плату                      *" << endl;
 	cout << "\t\t*   [Нажмите 3] Выйти                      *" << endl;
@@ -35,7 +35,7 @@ void menu() {
 		break;
 	}
 	default: {
-		cout << "Вы вели некорректное значение!" << endl;
+		cout << "Вы ввели некорректное значение!" << endl;
 		menu();
 	}
 	}
@@ -50,10 +50,10 @@ void info_solary() {
 	cout << "\t\t        --------------------------\n\n" << endl;
 	cout << "\t\t********************Меню*******************" << endl;
 	cout << "\t\t*                                         *" << endl;
-	cout << "\t\t*     [Нажмите 1]Как расчивается          *" << endl;
+	cout << "\t\t*     [Нажмите 1]Как расчитывается        *" << endl;
 	cout << "\t\t*                заработная плата?        *" << endl;
 	cout << "\t\t*     [Нажмите 2]Вывести штатное          *" << endl;
-	cout << "\t\t*                рассписание              *" << endl;
+	cout << "\t\t*                расписание               *" << endl;
 	cout << "\t\t*     [Нажмите 3]Вернуться назад          *" << endl;
 	cout << "\t\t*                                         *" << endl;
 	cout << "\t\t*******************************************" << endl;
@@ -78,7 +78,7 @@ void info_solary() {
 		break;
 	}
 	default: {
-		cout << "Вы вели некорректное значение!" << endl;
+		cout << "Вы ввели некорректное значение!" << endl;
 		info_solary();
 	}
 	}
@@ -212,7 +212,7 @@ void calculation(string position, string username) {
 			break;
 		}
 		default: {
-			cout << "Вы вели некорректное значение!" << endl;
+			cout << "Вы ввели некорректное значение!" << endl;
 			calculation(position, username);
 		}
 		}
@@ -231,7 +231,7 @@ void print_solary(float clen_solary, float solary, int work_hour, int prize, str
 	cout << setw(30) << left << "\t\tПочасовая ставка: $" << fixed << setprecision(2) << hourlyRate << endl;
 	cout << setw(30) << left << "\t\tПремиальные: $" << fixed << setprecision(2) << prize << endl;
 	cout << setw(30) << left << "\t\tОтработанные часы: " << work_hour << endl;
-	cout << setw(30) << left << "\t\tПодохдный налог:" << fixed << setprecision(2) << "13%" << endl;
+	cout << setw(30) << left << "\t\tПодоходный налог:" << fixed << setprecision(2) << "13%" << endl;
 	cout << "\t\t-------------------------------------------" << endl;
 	cout << setw(30) << left << "\t\tИтого к выплате: $" << fixed << setprecision(2) << solary << endl;
 	cout << "\t\t-------------------------------------------" << endl;
