@@ -2,22 +2,22 @@
 void hello_menu() {
 	system("cls");
 	int choice;
-	cout << "\t\t             Ïðèâåòñòâóþ!         " << endl;
+	cout << "\t\t             ÐŸÑ€Ð¸Ð²ÐµÑ‚ÑÑ‚Ð²ÑƒÑŽ!         " << endl;
 	cout << "\t\t     --------------------------\n\n" << endl;
-	cout << "\t\t***********Ìåíþ âõîäà******************" << endl;
+	cout << "\t\t***********ÐœÐµÐ½ÑŽ Ð²Ñ…Ð¾Ð´Ð°******************" << endl;
 	cout << "\t\t*\t\t\t\t      *\n";
-	cout << "\t\t*\t[Íàæìèòå 1]Àâòîðèçèðîâàòüñÿ   *\n";
-	cout << "\t\t*\t[Íàæìèòå 2]Çàðåãèñòðèðîâàòüñÿ *\n";
-	cout << "\t\t*\t[Íàæìèòå 3]Çàáûëè ïàðîëü?     *\n";
-	cout << "\t\t*\t[Íàæìèòå 4]Âûéòè              *\n";
+	cout << "\t\t*\t[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 1]ÐÐ²Ñ‚Ð¾Ñ€Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒÑÑ   *\n";
+	cout << "\t\t*\t[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 2]Ð—Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒÑÑ *\n";
+	cout << "\t\t*\t[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 3]Ð—Ð°Ð±Ñ‹Ð»Ð¸ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ?     *\n";
+	cout << "\t\t*\t[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 4]Ð’Ñ‹Ð¹Ñ‚Ð¸              *\n";
 	cout << "\t\t*\t\t\t\t      *\n";
 	cout << "\t\t***************************************\n";
-	cout << "\n\tÂàø âûáîð: ";
+	cout << "\n\tÐ’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€: ";
 	while (!(cin >> choice) || (cin.peek() != '\n'))
 	{
 		cin.clear();
 		while (cin.get() != '\n');
-		cout << "Îøèáêà! Ââåäèòå êîððåêòíîå çíà÷åíèå:";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:";
 	}
 	switch (choice) {
 	case 1: {
@@ -37,7 +37,7 @@ void hello_menu() {
 		break;
 	}
 	default: {
-		cout << "Âû âåëè íåêîððåêòíîå çíà÷åíèå!" << endl;
+		cout << "Ð’Ñ‹ Ð²ÐµÐ»Ð¸ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ!" << endl;
 		hello_menu();
 	}
 	}
@@ -45,7 +45,7 @@ void hello_menu() {
 }
 
 /*
-			Ëîãèí
+			Ð›Ð¾Ð³Ð¸Ð½
 */
 
 void login() {
@@ -53,16 +53,16 @@ void login() {
 	string username, password;
 	string line;
 	bool success = false, admin_success = false, not_ban = true;
-	cout << "\n\n\t\t            Ìåíþ çàïîëíåíèÿ         " << endl;
+	cout << "\n\n\t\t            ÐœÐµÐ½ÑŽ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ         " << endl;
 	cout << "\t\t        -----------------------\n" << endl;
-	cout << "\t\t\t Åñëè õîòèòå âåðíóòüñÿ" << endl;
-	cout << "\t\t\t íàçàä íàïèøèòå back" << endl;
-	cout << "\n\t\t\tÂâåäèòå èìÿ ïîëüçîâàòåëÿ: ";
+	cout << "\t\t\t Ð•ÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ" << endl;
+	cout << "\t\t\t Ð½Ð°Ð·Ð°Ð´ Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ back" << endl;
+	cout << "\n\t\t\tÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ: ";
 	cin >> username;
 	if (username == "back") {
 		hello_menu();
 	}
-	cout << "\t\t\tÂâåäèòå ïàðîëü: ";
+	cout << "\t\t\tÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: ";
 	cin >> password;
 	if (username == "back") {
 		hello_menu();
@@ -72,7 +72,7 @@ void login() {
 	}*/
 	ifstream file_login("data.txt"), check_admin("adminlist.txt");
 	if (!file_login.is_open() && !check_admin.is_open()) {
-		cout << "Îøèáêà â äàííûõ" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð² Ð´Ð°Ð½Ð½Ñ‹Ñ…" << endl;
 		Sleep(2000);
 		hello_menu();
 	}
@@ -98,7 +98,7 @@ void login() {
 	string ban, check_username;
 	ifstream check_banlist("banlist.txt");
 	if (!check_banlist.is_open()) {
-		cout << "Îøèáêà!" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°!" << endl;
 		Sleep(2000);
 		hello_menu();
 	}
@@ -114,7 +114,7 @@ void login() {
 	if (success && not_ban) {
 		if (admin_success) {
 			system("cls");
-			cout << "Âõîä â ðåæèì àäìèíèñòðàòîðà âûïîëíåí óñïåøíî!\n" << "Ïîäîæäèòå..." << endl;
+			cout << "Ð’Ñ…Ð¾Ð´ Ð² Ñ€ÐµÐ¶Ð¸Ð¼ Ð°Ð´Ð¼Ð¸Ð½Ð¸ÑÑ‚Ñ€Ð°Ñ‚Ð¾Ñ€Ð° Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾!\n" << "ÐŸÐ¾Ð´Ð¾Ð¶Ð´Ð¸Ñ‚Ðµ..." << endl;
 			ofstream file_who_join("online.txt");
 			file_who_join << username;
 			file_who_join.close();
@@ -124,7 +124,7 @@ void login() {
 		}
 		else {
 			system("cls");
-			cout << "Âõîä âûïîëíåí óñïåøíî!\n" << "Ïîäîæäèòå..." << endl;
+			cout << "Ð’Ñ…Ð¾Ð´ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½ ÑƒÑÐ¿ÐµÑˆÐ½Ð¾!\n" << "ÐŸÐ¾Ð´Ð¾Ð¶Ð´Ð¸Ñ‚Ðµ..." << endl;
 			ofstream file_who_join("online.txt");
 			file_who_join << username;
 			file_who_join.close();
@@ -136,13 +136,13 @@ void login() {
 	else {
 		if (not_ban == false) {
 			system("cls");
-			cout << "Âàø àêêàóíò çàáëîêèðîâàí" << endl;
+			cout << "Ð’Ð°Ñˆ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚ Ð·Ð°Ð±Ð»Ð¾ÐºÐ¸Ñ€Ð¾Ð²Ð°Ð½" << endl;
 			Sleep(3000);
 			hello_menu();
 		}
 		else {
-			cout << "Îøèáêà âõîäà: íåïðàâèëüíîå èìÿ ïîëüçîâàòåëÿ èëè ïàðîëü." << endl;
-			cout << "Ïîïðîáóéòå åùå ðàç" << endl;
+			cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ñ…Ð¾Ð´Ð°: Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ Ð¸Ð»Ð¸ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ." << endl;
+			cout << "ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÐµÑ‰Ðµ Ñ€Ð°Ð·" << endl;
 			Sleep(2000);
 			login();
 		}
@@ -151,22 +151,22 @@ void login() {
 
 
 /*
-			Çàáûëè ïàðîëü
+			Ð—Ð°Ð±Ñ‹Ð»Ð¸ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ
 */
 
 void forgot_pass() {
 	system("cls");
 	int choice;
-	cout << "\n\n\t\t            Ìåíþ âîñcòàíîâëåíèÿ ïàðîëÿ         " << endl;
+	cout << "\n\n\t\t            ÐœÐµÐ½ÑŽ Ð²Ð¾ÑcÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð°Ñ€Ð¾Ð»Ñ         " << endl;
 	cout << "\t\t        ---------------------------------\n" << endl;
-	cout << "\t\t\tÇàáûëè?! Ñåé÷àñ ìû âàì ïîìîæåì" << endl;
-	cout << "\t\t\t[Íàæìèòå 1]Âîññòàíîâèòü ïàðîëü\n" << "\t\t\t[Íàæìèòå 2]Ìåíþ" << endl;
-	cout << "\t\t\tÂàø âûáîð:";
+	cout << "\t\t\tÐ—Ð°Ð±Ñ‹Ð»Ð¸?! Ð¡ÐµÐ¹Ñ‡Ð°Ñ Ð¼Ñ‹ Ð²Ð°Ð¼ Ð¿Ð¾Ð¼Ð¾Ð¶ÐµÐ¼" << endl;
+	cout << "\t\t\t[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 1]Ð’Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚ÑŒ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ\n" << "\t\t\t[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 2]ÐœÐµÐ½ÑŽ" << endl;
+	cout << "\t\t\tÐ’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€:";
 	while (!(cin >> choice) || (cin.peek() != '\n'))
 	{
 		cin.clear();
 		while (cin.get() != '\n');
-		cout << "Îøèáêà! Ââåäèòå êîððåêòíîå çíà÷åíèå:";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:";
 	}
 	switch (choice) {
 	case 1: {
@@ -175,14 +175,14 @@ void forgot_pass() {
 	}
 	case 2: {
 		system("cls");
-		cout << "Ïîäîæäèòå..." << endl;
+		cout << "ÐŸÐ¾Ð´Ð¾Ð¶Ð´Ð¸Ñ‚Ðµ..." << endl;
 		Sleep(2000);
 		system("cls");
 		hello_menu();
 		break;
 	}
 	default: {
-		cout << "Âû ââåëè íåêîððåêòíîå çíà÷åíèå!" << endl;
+		cout << "Ð’Ñ‹ Ð²Ð²ÐµÐ»Ð¸ Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ!" << endl;
 		forgot_pass();
 	}
 	}
@@ -191,9 +191,9 @@ void password_recovery() {
 	system("cls");
 	string search_username, username, password;
 	bool success = false;
-	cout << "\n\n\t\t            Âîññòàíîâëåíèÿ ïàðîëÿ         " << endl;
+	cout << "\n\n\t\t            Ð’Ð¾ÑÑÑ‚Ð°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð°Ñ€Ð¾Ð»Ñ         " << endl;
 	cout << "\t\t        ----------------------------\n" << endl;
-	cout << "\t\t\tÂâåäèòå èìÿ ïîëüçîâàòåëÿ: ";
+	cout << "\t\t\tÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»Ñ: ";
 	cin >> search_username;
 	ifstream file_pass("data.txt");
 	while (file_pass >> username >> password) {
@@ -203,10 +203,10 @@ void password_recovery() {
 		}
 	}
 	if (success) {
-		cout << "\t\t\tÂàø ïàðîëü:" << password << endl;
+		cout << "\t\t\tÐ’Ð°Ñˆ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ:" << password << endl;
 	}
 	else {
-		cout << "\t\t\tÏîëüçîâàòåëñÿ íå çàðåãèñòðèðîâàí" << endl;
+		cout << "\t\t\tÐŸÐ¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑÑ Ð½Ðµ Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€Ð¾Ð²Ð°Ð½" << endl;
 	}
 	file_pass.close();
 	system("pause");
@@ -214,18 +214,18 @@ void password_recovery() {
 	hello_menu();
 }
 /*
-			Ðåãèñòðàöèÿ
+			Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ
 */
 
 void registration() {
 	int choice;
 	string reg_name, reg_pass, reg_position, check_username, check_password;
 	system("cls");
-	cout << "\t\t           Ìåíþ çàïîëíåíèÿ         " << endl;
+	cout << "\t\t           ÐœÐµÐ½ÑŽ Ð·Ð°Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ñ         " << endl;
 	cout << "\t\t        ---------------------\n\n" << endl;
-	cout << "\t\t\tÅñëè õîòèòå âåðíóòüñÿ íàçàä íàïèøèòå back\n" << "\t\t\tÂâåäèòå äàííûå äëÿ ðåãèñòðàöèè\n" << "\t\t\tËîãèí:";
+	cout << "\t\t\tÐ•ÑÐ»Ð¸ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ Ð²ÐµÑ€Ð½ÑƒÑ‚ÑŒÑÑ Ð½Ð°Ð·Ð°Ð´ Ð½Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ back\n" << "\t\t\tÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð´Ð»Ñ Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸\n" << "\t\t\tÐ›Ð¾Ð³Ð¸Ð½:";
 	cin >> reg_name;
-	cout << "\t\t\tÏàðîëü:";
+	cout << "\t\t\tÐŸÐ°Ñ€Ð¾Ð»ÑŒ:";
 	cin >> reg_pass;
 	if (reg_name == "back" || reg_pass == "back") {
 		hello_menu();
@@ -233,19 +233,19 @@ void registration() {
 	ifstream check("data.txt");
 	while (check >> check_username >> check_password) {
 		if (reg_name == check_username) {
-			cout << "Äàííûé ïîëüçîâàòåëü óæå åñòü â ñèñòåìå" << endl;
+			cout << "Ð”Ð°Ð½Ð½Ñ‹Ð¹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ ÑƒÐ¶Ðµ ÐµÑÑ‚ÑŒ Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ" << endl;
 			Sleep(2000);
 			registration();
 		}
 	}
 	check.close();
-	cout << "Âàøà äîëæíîñòü?\n" << "[Íàæìèòå 1]Front-end\n" << "[Íàæìèòå 2]Back-end\n" << "[Íàæìèòå 3]Áèçíåññ-àíàëèòèê" << endl;
-	cout << "Âàø âûáîð:";
+	cout << "Ð’Ð°ÑˆÐ° Ð´Ð¾Ð»Ð¶Ð½Ð¾ÑÑ‚ÑŒ?\n" << "[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 1]Front-end\n" << "[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 2]Back-end\n" << "[ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ 3]Ð‘Ð¸Ð·Ð½ÐµÑÑ-Ð°Ð½Ð°Ð»Ð¸Ñ‚Ð¸Ðº" << endl;
+	cout << "Ð’Ð°Ñˆ Ð²Ñ‹Ð±Ð¾Ñ€:";
 	while (!(cin >> choice) || (cin.peek() != '\n'))
 	{
 		cin.clear();
 		while (cin.get() != '\n');
-		cout << "Îøèáêà!" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°!" << endl;
 	}
 	switch (choice) {
 	case 1: {
@@ -261,7 +261,7 @@ void registration() {
 		break;
 	}
 	default: {
-		cout << "Îøèáêà! Ââåäèòå êîððåêòíîå çíà÷åíèå:";
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ:";
 		registration();
 	}
 	}
@@ -274,12 +274,12 @@ void registration() {
 	ofstream file_registration;
 	file_registration.open("data.txt", ofstream::app);
 	if (!file_registration.is_open()) {
-		cout << "Îøèáêà â äàííûõ" << endl;
+		cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð² Ð´Ð°Ð½Ð½Ñ‹Ñ…" << endl;
 	}
 	else {
 		file_registration << reg_name << ' ' << reg_pass << endl;
 		system("cls");
-		cout << "Ðåãèñòðàöèÿ óñïåøíà\n" << "Ïîäîæäèòå..." << endl;
+		cout << "Ð ÐµÐ³Ð¸ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ ÑƒÑÐ¿ÐµÑˆÐ½Ð°\n" << "ÐŸÐ¾Ð´Ð¾Ð¶Ð´Ð¸Ñ‚Ðµ..." << endl;
 	}
 	file_registration.close();
 	Sleep(2000);
@@ -288,14 +288,14 @@ void registration() {
 }
 
 /*
-		Çàâåðøåíèå ïðîãè
+		Ð—Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¾Ð³Ð¸
 */
 
 void exit() {
 	int timer;
 	system("cls");
 	for (timer = 5; timer > 0; timer--) {
-		cout << "\n\n\n\t\t\tÏðîãðàììà çàâåðøèò ðàáîòó ÷åðåç " << timer << endl;
+		cout << "\n\n\n\t\t\tÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° Ð·Ð°Ð²ÐµÑ€ÑˆÐ¸Ñ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ñƒ Ñ‡ÐµÑ€ÐµÐ· " << timer << endl;
 		Sleep(1000);
 		system("cls");
 	}
