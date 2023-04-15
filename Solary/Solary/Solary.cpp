@@ -1,6 +1,6 @@
 ﻿#include "Header.h"
 int main()
 {
-    setlocale(LC_ALL, "RUS");
+    system("chcp 1251");
     hello_menu();
 }
